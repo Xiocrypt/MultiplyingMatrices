@@ -18,11 +18,22 @@ Private Sub btnMagic_Click()
                 Cells(4, 14)=i+24
                 Cells(5, 14)=currentCol+3
                 Cells(6, 14)=Cells(i+24,currentCol+3)
-                Cells(7, 14)=currentRow+10
-                Cells(8, 14)=j+3
-                Cells(9, 14)=Cells(currentRow+10, j+3)
-                Cells(10, 14)=currentRow
-                Cells(11, 14)=currentCol
+                
+                Cells(8, 14)=currentRow+10
+                Cells(9, 14)=j+3
+                Cells(10, 14)=Cells(currentRow+10, j+3)
+
+                Cells(12, 14)=currentRow
+                Cells(13, 14)=currentCol
+
+                Cells(15, 14)=Ah
+                Cells(16, 14)=Aw
+
+                Cells(18, 14)=Bh
+                Cells(19, 14)=Bw
+
+                Cells(21, 14)=Ch
+                Cells(22, 14)=Cw
                 sum = sum + (Cells(i+24,currentCol+3) * Cells(currentRow+10, i+3))
             Next i
 
