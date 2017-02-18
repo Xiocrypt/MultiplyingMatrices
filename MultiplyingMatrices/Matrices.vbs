@@ -19,6 +19,7 @@ Private Sub btnMagic_Click()
                 If j<Cw Then
                     sum = sum + (Cells(i+24,currentCol+3) * Cells(currentRow+10, i+3))
                 End If
+                j=j+1
             Next i
             Cells(currentRow + 38, currentCol + 3) = sum
         Next currentCol
