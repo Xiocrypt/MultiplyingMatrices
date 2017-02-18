@@ -15,11 +15,13 @@ Private Sub btnMagic_Click()
         For currentCol = 0 To Cw
             sum=0
             For i = 0 To Bh
+                Cells(3, 3)=Cells(i+24,currentCol+3)
+                Cells(4, 4)=Cells(currentRow+10, j+3)
                 sum = sum + (Cells(i+24,currentCol+3) * Cells(currentRow+10, j+3))
             Next i
 
             Cells(currentCol + 38, currentRow + 3) = sum
-        Next j
-    Next i
+        Next currentCol
+    Next currentRow
 
 End Sub
