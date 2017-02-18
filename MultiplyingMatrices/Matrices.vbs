@@ -11,6 +11,9 @@ Private Sub btnMagic_Click()
     Bw=Cells(6,6)
     Ch=Bh
     Cw=Aw
+    Cells(4, 14)=Ch
+    Cells(4, 15)=Cw
+
     For currentRow = 0 To Ch
         For currentCol = 0 To Cw
             sum=0
